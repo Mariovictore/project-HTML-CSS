@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+
+    <body style="background-image:url(photos/1.png);background-repeat: no-repeat;background-size: 100%;">
+        <form action="Thankyou.html" method="post">
+        <fieldset>
+        <label for="UserName">ID: </label>  
+        <input type="text" name="Id" id="" value="" placeholder="Enter Your Id" ><br>
+        <input type="hidden" name="ID" value="100"><br>
+        <label for="fullName">Full Name: *</label>  
+        <input onblur="regFulName()" onmouseover="border(this)" onmouseleave="border2(this)" 
+        type="text" name="Full Name" id="fullName" value="" placeholder="Enter Your Name"  required>
+        <div id="msg" style="color: red; font-size: 15px; visibility:hidden;">Invalid name</div>
+        <label for="UserName">Email: </label>  
+        <input type="email" name="email" id="email" placeholder="M@gmail.com" required ><br><br>
+        <label for="UserName">Password: </label>  
+        <input type="password" name="Password" id="pasword" placeholder="Enter Your Password" required ><br><br>
+        <label for="UserName">Repeated your password: </label>  
+        <input onblur="password()" type="password" name="repatedPasword" id="repatedPasword"
+         placeholder="repeat Your Password" required >
+         <div id="msg2" style="color: red; font-size: 15px; visibility:hidden;"> password and repeat password should be the same</div>
+         <br>
+        <label for="UserName">birthday: </label>  
+        <input type="date" name="birthday" id="birthday"><br><br>
+        <label for="UserName">Your photo: </label>  
+        <input type="file" name="your photo" id="photo" placeholder="your photo"><br><br>
+        <label for="UserName">Gender: </label>  
+        <input type="radio" name="Sex" id="Sex" checked>Male
+        <input type="radio" name="Sex" id="Sex" >female <br><br>
+        <label>faculity:</label>
+        <select>
+            <option selected> alexandria</option>
+            <option>Menia</option>
+            <option>luxor</option>
+            <option>cairo</option>
+            <option>fayom</option>
+            <option>giza</option>
+        </select><br><br>
+        <label> Interests:</label>
+        <input type="checkbox" name="swimming"> swimming
+        <input type="checkbox" name="football"> football
+        <input type="checkbox" name="handball"> handball
+        <input type="checkbox" name="pcgamming"> pc gamming
+        <input type="checkbox" name="Pingpong"> pingpong
+        <input type="checkbox" name="playstation"> playstation<br><br>
+        <textarea placeholder="About you" cols="50" rows="10"></textarea><br>
+        <br>
+        <input type="checkbox" required ><a style="color: white;" href ="about.html" target="_blank">I agree to terms & conditions </a><br><br>
+        <input type="submit">
+        <input type="reset">
+        </form>
+        <script src="js.js"></script>
+    </body>
+</html>
